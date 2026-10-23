@@ -1,0 +1,13 @@
+# Railway deploy config.
+# Postgres is a separate Railway service; reference its DATABASE_URL variable.
+
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+# Memory-constrained start (matches the project's 160 MB budget).
+startCommand = "node --max-old-space-size=160 --optimize-for-size index.js"
+healthcheckPath = "/healthz"
+healthcheckTimeout = 100
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10

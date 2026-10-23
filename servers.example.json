@@ -1,0 +1,12 @@
+{
+  "pingRoleId": "",
+  "ragemp": ["play.example.com:22005"],
+  "redm": ["abc123"],
+  "samp": ["samp.example.com:7777"],
+  "pinned": {
+    "ragemp": { "channelId": "", "messageId": "" },
+    "redm": { "channelId": "", "messageId": "" },
+    "samp": { "channelId": "", "messageId": "" },
+    "total": { "channelId": "", "messageId": "" }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "rp-community-bot",
+  "version": "1.0.0",
+  "description": "Discord bot for game-server communities: live player-count tracking (RageMP/RedM/SAMP), pinned status embeds, welcome messages, and a web admin panel.",
+  "main": "index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node --max-old-space-size=160 --optimize-for-size index.js",
+    "deploy-commands": "node deploy-commands.js",
+    "check": "node --check index.js"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.100",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  },
+  "license": "MIT"
+}

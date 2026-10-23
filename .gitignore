@@ -1,0 +1,19 @@
+node_modules/
+.env
+.env.local
+.env.*.local
+*.log
+npm-debug.log*
+
+# Runtime data (rolling cache + local fallbacks) - keep templates, ignore live data
+stats.json
+guild-config.json
+server-meta.json
+servers.json
+*.tmp
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
